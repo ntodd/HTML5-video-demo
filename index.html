@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+  <head>
+    <title>HTML5 Video Thing</title>
+    <link rel="stylesheet" href="stylesheets/reset.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <style type="text/css" media="screen">
+      body {
+        background-color: #fff;
+        color: #333;
+        text-align: center;
+        margin-top: 50px;
+      }
+      h1, p { margin-bottom: 20px; }
+      video { -webkit-box-reflect:below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white)); }
+    </style>
+  </head>
+
+  <body>
+    <h1>HTML5 &lt;video&gt; Demo</h1>
+    <p>Best viewed in Safari 5 or Chrome.</p>
+    <p>Video &copy; copyright 2008, Blender Foundation / <a href="www.bigbuckbunny.org">www.bigbuckbunny.org</a></p>
+    <p><strong>Controls</strong>: space = play/pause, &uarr; = jump 30s, &darr; = back 30s, &rarr; = jump 5s, &larr; = back 5s, . = mark insert, / = jump to insert</p>
+
+    <video height="480" width="853" controls>
+      <source src="http://download.blender.org/peach/trailer/trailer_400p.ogg" type="video/ogg"> <!-- Firefox -->
+      <source src="http://download.blender.org/peach/trailer/trailer_480p.mov" type="video/mp4"> <!-- Safari & Chrome -->
+    </video>
+    
+    <script src="javascripts/mootools-1.2.4.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/mootools-1.2.4.4-more.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/app.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
